@@ -9,7 +9,7 @@ type User struct {
     Password          string             `bson:"password,omitempty"`
     Program           string             `bson:"program,omitempty"`
     Location          string             `bson:"location,omitempty"`
-    Interests         string             `bson:"interests,omitempty"`
+    Interests         []string           `bson:"interests,omitempty"`
     Languages         []string           `bson:"languages,omitempty"`
     JoinedDate        string             `bson:"joinedDate,omitempty"`
     ExpectedGradDate  string             `bson:"expectedGradDate,omitempty"`
