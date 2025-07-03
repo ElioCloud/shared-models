@@ -33,4 +33,5 @@ type Task struct {
     CompletedAt    int64              `bson:"completedAt,omitempty"`      // e.g., 1739740800 (Unix timestamp when completed)
     Type           string             `bson:"type"`                       // e.g., "offer" or "request"
     Category       string             `bson:"category"`                   // e.g., "food", "education", "errand"
+    IsBookable     bool               `bson:"isBookable"`                 // true = can be booked, false = already booked or disabled
 }
