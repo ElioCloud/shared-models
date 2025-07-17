@@ -20,6 +20,7 @@ type User struct {
     Name              string             `bson:"name"`
     Email             string             `bson:"email"`
     Password          string             `bson:"password,omitempty"`
+    Credits           int                `bson:"credits"`                    // e.g., 10 (points or tokens)
     College           string             `bson:"college,omitempty"`
     Program           string             `bson:"program,omitempty"`
     YearOfStudy       string             `bson:"yearOfStudy,omitempty"` // Use string for "2nd Year B.Sc. CS"
